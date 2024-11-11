@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Halaman Profil Bandung</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="navbar-container">
+      <div class="logo">
+        <img src="img/logo.png" alt="Dicoding Indonesia" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="home">
+        <article id="home" class="content-main">
+          <div class="content-description">
+            <h1 class="title">Hy I,m Aulia <span>Ikhwan</span></h1>
+            <p>This is my portfolio website to showes all <br />Details and work exiprins web development</p>
+            <button>DWONLOAD CV</button>
+          </div>
+
+          <div class="content-image">
+            <img src="img/saya.png" alt="Dicoding Indonesia" />
+          </div>
+        </article>
+
+        <article id="portfolio" class="card">
+          <h1 class="header-portfolio">Portfolio</h1>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <img src="img/New folder/1.png" alt="Proyek 1" />
+              <h3>Judul</h3>
+              <p>Ini adalah proyek pertama saya. Deskripsi singkatnya bisa disini.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/New folder/2.png" alt="Proyek 2" />
+              <h3>Judul</h3>
+              <p class="p-proyek">Ini adalah proyek kedua saya. Deskripsi singkatnya bisa disini.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/New folder/3.png" alt="Proyek 3" />
+              <h3>Judul</h3>
+              <p>Ini adalah proyek ketiga saya. Deskripsi singkatnya bisa disini.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/New folder/5.png" alt="Proyek 4" />
+              <h3>Judul</h3>
+              <p>Ini adalah proyek keempat saya. Deskripsi singkatnya bisa disini.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/New folder/6.png" alt="Proyek 5" />
+              <h3>Judul</h3>
+              <p>Ini adalah proyek kelima saya. Deskripsi singkatnya bisa disini.</p>
+            </div>
+            <div class="portfolio-item">
+              <img src="img/New folder/7.png" alt="Proyek 6" />
+              <h3>Judul</h3>
+              <p>Ini adalah proyek keenam saya. Deskripsi singkatnya bisa disini.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="contact" class="card">
+          <h1 class="header-contact">Contact</h1>
+          <div class="contact-container">
+            <div class="left-side">
+              <img src="img/contact.png" alt="Portfolio Image" />
+            </div>
+            <div class="right-side">
+              <h2 class="contact-header">Kontak Saya</h2>
+              <form action="proses-form.php" method="POST">
+                <label for="nama">Name:</label>
+                <input type="text" id="nama" name="nama" required />
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+                <label for="pesan">Message:</label>
+                <textarea id="pesan" name="pesan" required></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Biodata</h2>
+
+            <figure>
+              <img class="figure" src="img/nama.jpeg" />
+              <figcaption>Bang_joo</figcaption>
+              <hr />
+            </figure>
+          </header>
+
+          <section>
+            <table class="header-table">
+              <tr>
+                <th>Negara</th>
+                <td>Indonesia</td>
+              </tr>
+              <tr>
+                <th>Hari jadi</th>
+                <td>25 September 1810</td>
+              </tr>
+              <tr>
+                <th>Luas Total</th>
+                <td>167.67 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th>Bahasa Daerah</th>
+                <td>Sunda</td>
+              </tr>
+              <tr>
+                <th>Kode Telepon</th>
+                <td>+62 22</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <!-- Site footer start-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>Social Media</h4>
+            <ul>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Information</h4>
+            <ul>
+              <li><a href="#">email </a></li>
+              <li><a href="#">phone number</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">social media links</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>My Account</h4>
+            <ul>
+              <li><a href="#">Acces My Account</a></li>
+              <li><a href="#">Track My Order</a></li>
+              <li><a href="#">Acces My Account</a></li>
+              <li><a href="#">Track My Order</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-line"></div>
+        <div class="footer-copyright">
+          <p>&copy; 2023 Aulia Ikhwan. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Site footer End-->
+
+    <script src="script.js"></script>
+  </body>
+</html>

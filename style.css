@@ -1,0 +1,498 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Ganti dengan warna latar belakang yang Anda inginkan */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan saat navbar fixed */
+  z-index: 999;
+  padding: 0.5rem 0;
+}
+
+/* home start */
+.content-main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+}
+
+.content-main .content-description {
+  flex: 1 1;
+}
+
+.content-main .content-description .title {
+  font-size: 3.5rem;
+  margin: 1rem 0;
+  color: #141e46;
+}
+
+.content-main .content-description .title span {
+  color: #bb2525;
+}
+
+.content-main .content-description p {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.content-main .content-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #141e46;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.content-main .content-description button:hover {
+  border: 3px solid #141e46;
+  color: #141e46;
+  background-color: transparent;
+}
+
+.content-main .content-image {
+  flex: 1;
+  display: flex;
+}
+
+.content-main .content-image img {
+  margin: auto;
+  min-width: 250px;
+  width: 300px;
+}
+/* home end */
+
+/* Portfolio start */
+.header-portfolio {
+  text-align: center;
+  padding: 20px;
+  color: #141e46;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.portfolio-item {
+  border: 1px solid #ddd;
+  padding: 50px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+
+.portfolio-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.portfolio-item p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+/* Portfolio end */
+
+/* kontak start */
+.header-contact {
+  text-align: center;
+  padding: 20px 0;
+  color: #141e46;
+}
+
+/* Add this CSS to style the Kontak Saya section */
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-side img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right-side {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-header {
+  font-size: 1.5rem;
+  color: #141e46;
+  margin-bottom: 1rem;
+}
+
+.right-side form {
+  font-size: 1rem;
+}
+
+.right-side form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #141e46;
+}
+
+.right-side form input,
+.right-side form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.right-side form button {
+  padding: 0.8rem 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #141e46;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+.right-side form button:hover {
+  border: 3px solid #141e46;
+  color: #141e46;
+  background-color: transparent;
+}
+
+.header-table {
+  text-align: left;
+}
+/* kontak end */
+
+body {
+  font-family: "Quicksand", sans-serif;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #00a2c6;
+}
+
+/* footer {
+  padding: 20px;
+  color: white;
+  background-color: #00a2c6;
+  text-align: center;
+  font-weight: bold;
+} */
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* .jumbotron {
+  font-size: 20px;
+  padding: 60px;
+  background-color: #00c8eb;
+  text-align: center;
+  color: white;
+}
+
+nav li {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+nav {
+  background-color: #00a2c6;
+  padding: 5px;
+
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+
+  gap: 2rem;
+} */
+
+/* navbar start */
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 150px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #141e46;
+  color: white;
+}
+/* navbar end */
+
+main {
+  padding: 20px;
+
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+aside {
+  flex: 1;
+}
+
+header {
+  display: inline;
+}
+
+.figure {
+  border-radius: 100px;
+  border: 5px solid #bb2525;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer {
+  background-color: #141e46;
+  padding: 30px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #24262b;
+  background-color: #ffffff;
+}
+
+.bawah {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+  text-align: center;
+}
+
+.bawah__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+.footer-line {
+  height: 1px;
+  background-color: #fff;
+  margin: 20px 0;
+}
+
+.footer-copyright {
+  text-align: center;
+  color: #999;
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
